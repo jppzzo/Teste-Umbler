@@ -4,7 +4,8 @@ Passo 1 - Baixar o Repositório
 Clone o repositório para o seu ambiente local: git clone https://github.com/jppzzo/Teste-Umbler.git
 
 Passo 2 - Verificar Versão do .NET
-No terminal, verifique a versão do .NET instalada: dotnet --version
+No terminal, verifique a versão do .NET instalada:
+ - dotnet --version
 
 Passo 3 - Se nāo reconhecer o comando, realizar a instalaçāo SDK .NET https://dotnet.microsoft.com/pt-br/download/dotnet/thank-you/sdk-8.0.302-macos-arm64-installer
 
