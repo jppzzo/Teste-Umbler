@@ -23,8 +23,10 @@ Criar Transação
  - Adicione 11 números do cartão de crédito.
  - Adicione 3 números para o CVV.
  - Insira o valor da transação.
-Capturar Transação
+ 
+ Capturar Transação
  - Copie o "paymentId" da transação criada.
  - Adicione o "paymentId" junto com o valor correto.
-Cancelar Transação
+ 
+  Cancelar Transação
  - Adicione apenas o "paymentId" da transação.
