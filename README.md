@@ -1,4 +1,4 @@
-#Teste 2 Umbler
+# Teste 2 Umbler
 
 Passo 1 - Baixar o Repositório
 Clone o repositório para o seu ambiente local: git clone https://github.com/jppzzo/Teste-Umbler.git
@@ -15,7 +15,7 @@ dotnet build //comando utilizado para compilaçāo da aplicação
 dotnet run //comando para rodar o projeto compilado
 
 --------------------------------------------------------------------
-Passo 2 - WEB
+# Passo 2 - WEB
 Ao iniciar o projeto no localhost, siga os passos abaixo para criar e gerenciar transações.
 
 Criar Transação
