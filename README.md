@@ -14,7 +14,6 @@ Passo 5 - Compilar e Executar o Projeto com os seguintes comandos:
  - dotnet build //comando utilizado para compilaçāo da aplicação
  - dotnet run //comando para rodar o projeto compilado
 
---------------------------------------------------------------------
 # Passo 2 - WEB
 Ao iniciar o projeto no localhost, siga os passos abaixo para criar e gerenciar transações.
 
