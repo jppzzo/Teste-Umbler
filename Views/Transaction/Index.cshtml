@@ -1,0 +1,92 @@
+@{
+    ViewData["Title"] = "Transações de Cartão de Crédito";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+        color: #333;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #2c8eda; 
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #1f6db7; 
+    }
+</style>
+
+<div class="container">
+    <h2>Transações de Cartão de Crédito</h2>
+
+    <form asp-action="CreateTransaction" method="post">
+        <h3>Criar Transação</h3>
+        <label>Nome do Titular do Cartao:</label>
+        <input type="text" name="Payment.CreditCard.Holder" required />
+        <label>Número do Cartão:</label>
+        <input type="text" name="Payment.CreditCard.CardNumber" required />
+        <label>CVV:</label>
+        <input type="text" name="Payment.CreditCard.SecurityCode" required />
+        <label>Valor da Transação:</label>
+        <input type="number" name="Payment.Amount" required />
+        <input type="hidden" name="MerchantOrderId" value="P10" />
+        <button type="submit">Criar Transação</button>
+    </form>
+
+    <form asp-action="CaptureTransaction" method="post">
+        <h3>Capturar Transação</h3>
+        <label>ID do Pagamento:</label>
+        <input type="text" name="Payment.PaymentId" required />
+        <label>Valor do Pagamento:</label>
+        <input type="number" name="Payment.Amount" required />
+        <input type="hidden" name="Payment.Capture" value="true" />
+        <button type="submit">Capturar Transação</button>
+    </form>
+
+    <form asp-action="CancelTransaction" method="post">
+        <h3>Cancelar Transação</h3>
+        <label>ID do Pagamento:</label>
+        <input type="text" name="Payment.PaymentId" required />
+        <button type="submit">Cancelar Transação</button>
+    </form>
+</div>
