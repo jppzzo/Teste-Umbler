@@ -1,7 +1,7 @@
 Teste 2 Umbler
 
 Passo 1 - Baixar o Repositório
-Clone o repositório para o seu ambiente local: git clone https://github.com/seu-usuario/nome-do-repositorio.git
+Clone o repositório para o seu ambiente local: git clone https://github.com/jppzzo/Teste-Umbler.git
 
 Passo 2 - Verificar Versão do .NET
 No terminal, verifique a versão do .NET instalada: dotnet --version
