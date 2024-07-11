@@ -11,8 +11,8 @@ Passo 3 - Se nāo reconhecer o comando, realizar a instalaçāo SDK .NET https:/
 Passo 4 - Abrir o Projeto no Visual Studio Code
 
 Passo 5 - Compilar e Executar o Projeto com os seguintes comandos:
-dotnet build //comando utilizado para compilaçāo da aplicação
-dotnet run //comando para rodar o projeto compilado
+ - dotnet build //comando utilizado para compilaçāo da aplicação
+ - dotnet run //comando para rodar o projeto compilado
 
 --------------------------------------------------------------------
 # Passo 2 - WEB
